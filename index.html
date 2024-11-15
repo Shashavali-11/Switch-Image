@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <body id = "bd">
+      <div id="md1">
+        <img id="imge" /><br /><br>&emsp;
+        <button id="btn1" onclick="img1()">CAR - 1</button>&emsp;&emsp;
+        <button id="btn2" onclick="img2()">CAR - 2</button>&emsp;&emsp;
+        <button id="btn3" onclick="img3()">CAR - 3</button>
+      </div>
+    <script>
+      let b = document.getElementById("bd");
+      b.style.background = "lightgrey"
+      b.style.height = "100vh";
+      b.style.width = "100vw";
+      b.style.display="flex";
+      b.style.direction="column";
+      b.style.justifyContent = "center";
+      b.style.alignItems="center"
+
+      let md = document.getElementById("md1");
+      md.style.background="grey";
+      md.style.height = "220px";
+      md.style.width = "300px";
+      md.style.padding = "30px";
+      md.style.border = "2px solid black ";
+      md.style.borderRadius = "10px"
+
+
+      let image = document.getElementById("imge");
+      image.setAttribute("src", "car1.jpeg");
+      image.style.boxShadow= "10px 10px 20px";
+      image.style.borderRadius = "10px";
+
+      let bt1 = document.getElementById("btn1");
+      bt1.style.borderRadius = "5px"
+
+      let bt2 = document.getElementById("btn2");
+      bt2.style.borderRadius = "5px"
+      let bt3 = document.getElementById("btn3");
+      bt3.style.borderRadius = "5px"
+
+      img1 = () => {
+        image.setAttribute("src", "car3.jpeg");
+      };
+      img2 = () => {
+        image.setAttribute("src", "car7.jpeg");
+      };
+      img3 = () => {
+        image.setAttribute("src", "car5.jpeg");
+      };
+    </script>
+  </body>
+</html>
+<br /><br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
